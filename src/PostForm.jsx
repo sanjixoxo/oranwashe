@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { styles as sharedStyles } from './Styles.js';
 
-const API_URL = 'http://localhost:5000/api';
+const API_URL = /*'http://localhost:5000/api';*/'https://oreratile-backend-4.onrender.com/api';
 
 function PostForm({ user, post, onSuccess, onCancel }) {
   const [formData, setFormData] = useState({

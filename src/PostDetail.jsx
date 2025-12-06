@@ -119,7 +119,7 @@ function PostDetail({ post, onBack }) {
         {post.image && (
           <div style={styles.detailImageContainer}>
             <img 
-              src={`http://localhost:5000${post.image}`} 
+              src={`https://oreratile-backend-4.onrender.com/api/posts${post.image}`} 
               alt={post.title}
               style={styles.detailImage}
             />

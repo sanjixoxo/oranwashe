@@ -1,6 +1,6 @@
 import React from 'react';
 
-const API_URL = 'http://localhost:5000/api';
+const API_URL = /*'http://localhost:5000/api';*/'https://oreratile-backend-4.onrender.com';
 
 function PostList({ posts, loading, onSelectPost, onEditPost, user }) {
   const handleDelete = async (postId) => {
