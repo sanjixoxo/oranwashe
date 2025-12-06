@@ -8,7 +8,7 @@ import PostList from './PostList.jsx';
 import PostDetail from './PostDetail.jsx';
 import Footer from './Footer.jsx';
 
-const API_URL = /*'http://localhost:5000/api';*/"https://oreratile-backend-4.onrender.com";
+const API_URL = /*'http://localhost:5000/api';*/"https://oreratile-backend-4.onrender.com/api";
 
 function App() {
   const [user, setUser] = useState(null);
