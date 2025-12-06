@@ -5,7 +5,7 @@ import Header from './Header.jsx';
 import AuthForm from './AuthForm.jsx';
 import PostForm from './PostForm.jsx';
 import PostList from './PostList.jsx';
-import PostDetail from './Postdetail.jsx';
+import PostDetail from './PostDetail.jsx';
 import Footer from './Footer.jsx';
 
 const API_URL = /*'http://localhost:5000/api';*/"https://oreratile-backend-4.onrender.com";
