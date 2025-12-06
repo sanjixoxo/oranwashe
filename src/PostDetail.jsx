@@ -1,4 +1,4 @@
-import React from 'react';
+/*import React from 'react';
 
 function PostDetail({ post, onBack }) {
   const styles = {
@@ -161,10 +161,8 @@ function PostDetail({ post, onBack }) {
   );
 }
 
-export default PostDetail;
-/*import React from 'react';
-
-const BASE_URL = import.meta.env.VITE_BASE_URL || 'https://oreratile-backend-4.onrender.com';
+export default PostDetail;*/
+import React from 'react';
 
 function PostDetail({ post, onBack }) {
   const styles = {
@@ -285,7 +283,7 @@ function PostDetail({ post, onBack }) {
         {post.image && (
           <div style={styles.detailImageContainer}>
             <img 
-              src={`${BASE_URL}${post.image}`} 
+              src={`https://oreratile-backend-4.onrender.com${post.image}`} 
               alt={post.title}
               style={styles.detailImage}
             />
@@ -327,4 +325,4 @@ function PostDetail({ post, onBack }) {
   );
 }
 
-export default PostDetail;*/
+export default PostDetail;

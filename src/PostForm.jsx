@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
+/*import React, { useState } from 'react';
 import { styles as sharedStyles } from './Styles.js';
 
-const API_URL = /*'http://localhost:5000/api';*/'https://oreratile-backend-4.onrender.com/api';
+const API_URL = /*'http://localhost:5000/api';'https://oreratile-backend-4.onrender.com/api';
 
 function PostForm({ user, post, onSuccess, onCancel }) {
   const [formData, setFormData] = useState({
@@ -217,12 +217,11 @@ function PostForm({ user, post, onSuccess, onCancel }) {
   );
 }
 
-export default PostForm;
-/*import React, { useState } from 'react';
+export default PostForm;*/
+import React, { useState } from 'react';
 import { styles as sharedStyles } from './Styles.js';
 
-const API_URL = import.meta.env.VITE_API_BASE_URL || 'https://oreratile-backend-4.onrender.com/api';
-const BASE_URL = import.meta.env.VITE_BASE_URL || 'https://oreratile-backend-4.onrender.com';
+const API_URL = 'https://oreratile-backend-4.onrender.com/api';
 
 function PostForm({ user, post, onSuccess, onCancel }) {
   const [formData, setFormData] = useState({
@@ -232,7 +231,7 @@ function PostForm({ user, post, onSuccess, onCancel }) {
   });
   const [image, setImage] = useState(null);
   const [loading, setLoading] = useState(false);
-  const [preview, setPreview] = useState(post?.image ? `${BASE_URL}${post.image}` : null);
+  const [preview, setPreview] = useState(post?.image ? `https://oreratile-backend-4.onrender.com${post.image}` : null);
 
   const handleImageChange = (e) => {
     const file = e.target.files[0];
@@ -271,7 +270,7 @@ function PostForm({ user, post, onSuccess, onCancel }) {
         alert('Failed to save post');
       }
     } catch (err) {
-      alert('Unable to connect to server. Please try again.');
+      alert('Unable to connect to server. Please make sure the backend is running.');
     } finally {
       setLoading(false);
     }
@@ -438,4 +437,4 @@ function PostForm({ user, post, onSuccess, onCancel }) {
   );
 }
 
-export default PostForm;*/
+export default PostForm;

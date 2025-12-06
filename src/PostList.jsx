@@ -1,6 +1,6 @@
-import React from 'react';
+/*import React from 'react';
 
-const API_URL = /*'http://localhost:5000/api';*/'https://oreratile-backend-4.onrender.com';
+const API_URL = 'http://localhost:5000/api';'https://oreratile-backend-4.onrender.com';
 
 function PostList({ posts, loading, onSelectPost, onEditPost, user }) {
   const handleDelete = async (postId) => {
@@ -322,11 +322,10 @@ function PostList({ posts, loading, onSelectPost, onEditPost, user }) {
   );
 }
 
-export default PostList;
-/*import React from 'react';
+export default PostList;*/
+import React from 'react';
 
-const API_URL = import.meta.env.VITE_API_BASE_URL || 'https://oreratile-backend-4.onrender.com/api';
-const BASE_URL = import.meta.env.VITE_BASE_URL || 'https://oreratile-backend-4.onrender.com';
+const API_URL = 'https://oreratile-backend-4.onrender.com/api';
 
 function PostList({ posts, loading, onSelectPost, onEditPost, user }) {
   const handleDelete = async (postId) => {
@@ -569,7 +568,7 @@ function PostList({ posts, loading, onSelectPost, onEditPost, user }) {
               {post.image ? (
                 <div style={styles.imageContainer}>
                   <img 
-                    src={`${BASE_URL}${post.image}`} 
+                    src={`https://oreratile-backend-4.onrender.com${post.image}`} 
                     alt={post.title}
                     style={styles.postImage}
                   />
@@ -648,4 +647,4 @@ function PostList({ posts, loading, onSelectPost, onEditPost, user }) {
   );
 }
 
-export default PostList;*/
+export default PostList;
